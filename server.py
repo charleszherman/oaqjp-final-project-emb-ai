@@ -9,11 +9,6 @@ def index():
     """ root """
     return render_template("index.html")
 
-#@app.errorhandler(400)
-#def empyty(error):
-#    empty_dict = {"anger":None, "disgust":None, "fear":None, "joy":None, "sadness":None, "dominant_emotion":None}
-#   return empty_dict, 400
-
 @app.route('/emotionDetector', methods=["GET"])
 def emotion_detector_caller():
   
